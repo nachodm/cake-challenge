@@ -1,0 +1,123 @@
+.page {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding: 80px;
+    gap: 64px;
+    min-height: calc(100vh - 41px);
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 32px;
+    grid-row-start: 2;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.links a {
+    appearance: none;
+    border-radius: 128px;
+    height: 48px;
+    padding: 0 20px;
+    border: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+a.primary {
+    background: black;
+    color: white;
+    gap: 8px;
+}
+
+.section {
+    width: 100%;
+    max-width: 809px;
+    min-width: 100px;
+    height: 176px;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid #16164029;
+    box-sizing: border-box;
+    transition: ease all 0.5s;
+    align-self: center;
+}
+
+.sectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.sectionBody {
+    width: 100%;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.sectionBody::-webkit-scrollbar {
+    display: none;
+}
+
+.thumbnail {
+    background-color: #1616400a;
+    width: 262px;
+    height: 104px;
+    border-radius: 16px;
+    padding: 8px;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    transition: ease all 0.5s;
+}
+
+.thumbnailPicture {
+    border-radius: 16px;
+}
+
+.thumbnailBody {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .section {
+        max-width: 768px;
+        padding: 0.5rem;
+    }
+
+    .thumbnail {
+        width: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .page {
+        padding: 32px;
+        padding-bottom: 80px;
+    }
+
+    .section {
+        padding: 0.5rem;
+        max-width: 100%;
+    }
+
+    .main {
+        align-items: center;
+    }
+}
